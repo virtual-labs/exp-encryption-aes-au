@@ -1,0 +1,39 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which AES operation mixes the bytes within each column of the state?",
+      "answers": {
+        "a": "SubBytes",
+        "b": "ShiftRows",
+        "c": "MixColumns",
+        "d": "AddRoundKey"
+      },
+      "explanations": {
+        "a": "Incorrect. SubBytes is a non-linear substitution step that affects each byte individually.",
+        "b": "Incorrect. ShiftRows is a transposition step that permutes bytes across rows.",
+        "c": "Correct. MixColumns is a diffusion step that combines the bytes within each column.",
+        "d": "Incorrect. AddRoundKey is a linear mixing step that combines the state with the round key."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the ShiftRows step in AES encryption?",
+      "answers": {
+        "a": "To substitute bytes using the S-box",
+        "b": "To permute the bytes within the state",
+        "c": "To expand the key",
+        "d": "To add the round key to the state"
+      },
+      "explanations": {
+        "a": "Incorrect. Substitution using the S-box is performed in the SubBytes step.",
+        "b": "Correct. ShiftRows permutes bytes within the state to ensure diffusion.",
+        "c": "Incorrect. Key expansion is not the purpose of ShiftRows; it is a separate process.",
+        "d": "Incorrect. Adding the round key to the state is performed in the AddRoundKey step."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "How many rounds of encryption does AES-128 perform?",
+      "answers": {
+        "a": "8",
+        "b": "10",
+        "c": "12",
+        "d": "14"
+      },
+      "explanations": {
+        "a": "Incorrect. AES-128 performs more than 8 rounds.",
+        "b": "Correct. AES-128 performs 10 rounds of encryption.",
+        "c": "Incorrect. AES-192 performs 12 rounds, not AES-128.",
+        "d": "Incorrect. AES-256 performs 14 rounds, not AES-128."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In the AES encryption process, which step is omitted in the final round?",
+      "answers": {
+        "a": "SubBytes",
+        "b": "ShiftRows",
+        "c": "MixColumns",
+        "d": "AddRoundKey"
+      },
+      "explanations": {
+        "a": "Incorrect. SubBytes is not omitted; it is part of every round including the final round.",
+        "b": "Incorrect. ShiftRows is performed in the final round as well.",
+        "c": "Correct. MixColumns is omitted in the final round to prepare for the output of encrypted data.",
+        "d": "Incorrect. AddRoundKey occurs in every round, including the final round."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
