@@ -34,6 +34,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What key length does AES not support?",
+      "answers": {
+        "a": "128-bit",
+        "b": "256-bit",
+        "c": "512-bit",
+        "d": "192-bit"
+      },
+      "explanations": {
+        "a": "Incorrect. AES supports 128-bit key sizes.",
+        "b": "Incorrect. AES supports 256-bit key sizes.",
+        "c": "Correct. AES does not support 512-bit key sizes.",
+        "d": "Incorrect. AES supports 192-bit key sizes."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The total number of rounds required for AES with 128 bit key is ______",
+      "answers": {
+        "a": "11",
+        "b": "10",
+        "c": "14",
+        "d": "12"
+      },
+      "explanations": {
+        "a": "Incorrect. AES with 128-bit key requires 10 rounds, not 11.",
+        "b": "Correct. AES with 128-bit key requires exactly 10 rounds.",
+        "c": "Incorrect. 14 rounds are required for AES with 256-bit key.",
+        "d": "Incorrect. 12 rounds are required for AES with 192-bit key."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In AES, no of operations to be followed in 10th round is _______.",
+      "answers": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "5"
+      },
+      "explanations": {
+        "a": "Incorrect. The final round has 3 operations, not 2.",
+        "b": "Correct. The final (10th) round has 3 operations: SubBytes, ShiftRows, and AddRoundKey (MixColumns is omitted).",
+        "c": "Incorrect. Regular rounds (1-9) have 4 operations, but the final round has only 3.",
+        "d": "Incorrect. The final round does not have 5 operations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
   ]
 }

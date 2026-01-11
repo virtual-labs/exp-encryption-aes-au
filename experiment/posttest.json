@@ -35,6 +35,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which property of AES ensures that changing one byte of plaintext affects many bytes of ciphertext after a few rounds?",
+      "answers": {
+        "a": "Confusion",
+        "b": "Avalanche effect through repeated SPN rounds",
+        "c": "Key padding",
+        "d": "S-box linearity"
+      },
+      "explanations": {
+        "a": "Incorrect. Confusion is related to the substitution step but does not describe the multi-byte effect.",
+        "b": "Correct. The avalanche effect through repeated SPN rounds ensures that small changes in plaintext lead to large changes in ciphertext.",
+        "c": "Incorrect. Key padding is not the property responsible for this effect.",
+        "d": "Incorrect. S-box is nonlinear, not linear, and this property is not about S-box linearity."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following best explains why AES uses both substitution and permutation operations?",
+      "answers": {
+        "a": "To reduce key storage",
+        "b": "To alternate between linear and nonlinear transformations for stronger security",
+        "c": "To simplify decryption",
+        "d": "To maintain block size"
+      },
+      "explanations": {
+        "a": "Incorrect. Substitution and permutation operations do not reduce key storage.",
+        "b": "Correct. AES alternates between linear (permutation) and nonlinear (substitution) transformations to provide both confusion and diffusion.",
+        "c": "Incorrect. Using both operations actually makes decryption more complex, not simpler.",
+        "d": "Incorrect. Block size is maintained regardless of the operations used."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If the round keys generated during key expansion are weak or predictable, which part of AES is most directly affected?",
+      "answers": {
+        "a": "ShiftRows becomes linear",
+        "b": "MixColumns fails to perform diffusion",
+        "c": "AddRoundKey becomes ineffective",
+        "d": "SubBytes produces constant output"
+      },
+      "explanations": {
+        "a": "Incorrect. ShiftRows is not affected by weak round keys; it is a deterministic permutation.",
+        "b": "Incorrect. MixColumns performs its diffusion regardless of the round keys.",
+        "c": "Correct. If round keys are weak or predictable, the AddRoundKey operation becomes ineffective as the XOR with a predictable key provides little security.",
+        "d": "Incorrect. SubBytes produces output based on the substitution box, not the round keys."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
     }
   ]
 }
