@@ -10,7 +10,7 @@
 
 → As you traverse the rounds, the simulator elucidates keys 1 to k-1 calculations with their intermediate results. Your acumen will be tested when prompted to deduce the kth round expansion key. Achieve accuracy, and the simulator unveils the subsequent phases.
 
-→ Enhance your understanding with the Learning Component: a vivid Concept Example. This animated and simulated feature is equipped with a "Previous" button, ensuring you can review and reinforce your knowledge as many times as you wish.
+→ Enhance your understanding with the Learning Component: a vivid Concept Example. This animated and simulated feature is equipped with a "Previous" button, ensuring you can review and reinforce your knowledge as many times as you wish
 
 
 
